@@ -1,5 +1,5 @@
 %define version	0.5.7
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 %define scim_version	1.4.5
 %define skim_version	1.4.5
@@ -19,7 +19,7 @@ Patch1:		scim-tables-0.5.0-fix-l10n.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:		scim >= %{scim_version}
 Requires:		%{libname} = %{version}
-BuildRequires:		scim-devel >= %{scim_version}
+BuildRequires:		scim-devel >= 1.4.7-4mdk
 BuildRequires:		libskim-devel >= %{skim_version}
 
 %description
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 # remove unneeded files
-rm -f %{buildroot}/%{_libdir}/scim-1.0/*/*/*.{a,la}
+rm -f %{buildroot}%{scim_plugins_dir}/*/*.{a,la}
 
 %find_lang %{name}
 %find_lang skim-scim-tables
@@ -83,8 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -n %{libname}
 %defattr(-,root,root)
 %doc COPYING
-%{_libdir}/scim-1.0/*/IMEngine/*.so
-%{_libdir}/scim-1.0/*/SetupUI/*.so
+%{scim_plugins_dir}/IMEngine/*.so
+%{scim_plugins_dir}/SetupUI/*.so
 
 %files skim -f skim-scim-tables.lang
 %defattr(-,root,root)
@@ -94,5 +94,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/services/skimconfiguredialog/skimplugin_scim_table_config.desktop
 %{_libdir}/kde3/kcm_skimplugin_scim_tables.la
 %{_libdir}/kde3/kcm_skimplugin_scim_tables.so
-
-
