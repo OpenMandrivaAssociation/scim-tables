@@ -379,6 +379,7 @@ This package includes table IM data files for Chinese.
 %files zh
 %defattr(-, root, root)
 %doc tables/zh/README-Erbi.txt tables/zh/README-CangJie.txt
+%doc tables/zh/README-Wu.txt
 %{_datadir}/scim/tables/Erbi.bin
 %{_datadir}/scim/tables/Erbi-QS.bin
 %{_datadir}/scim/tables/Wubi.bin
