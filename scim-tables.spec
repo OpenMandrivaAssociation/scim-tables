@@ -54,7 +54,7 @@ This package contains skim setup plugin for scim-tables.
 #-------------------------------------------------------------
 %package en
 Summary:        Dummy package for scim-tables-lang
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:	locales-en
 Conflicts:	scim-tables < 0.5.7-4
@@ -70,7 +70,7 @@ This package is dummy package to satisfy scim-tables-lang.
 #-------------------------------------------------------------
 %package am
 Summary:        Data files for Amharic
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-am
 Conflicts:      scim-tables < 0.5.7-4
@@ -87,7 +87,7 @@ This package includes table IM data files for Amharic.
 #-------------------------------------------------------------
 %package ar
 Summary:        Data files for Arabic
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ar
 Conflicts:      scim-tables < 0.5.7-4
@@ -104,7 +104,7 @@ This package includes table IM data files for Arabic.
 #-------------------------------------------------------------
 %package bn
 Summary:        Data files for Bengali
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-bn
 Conflicts:      scim-tables < 0.5.7-4
@@ -123,7 +123,7 @@ This package includes table IM data files for Bengali.
 #-------------------------------------------------------------
 %package gu
 Summary:        Data files for Gujarati
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-gu
 Conflicts:      scim-tables < 0.5.7-4
@@ -142,7 +142,7 @@ This package includes table IM data files for Gujarati.
 #-------------------------------------------------------------
 %package hi
 Summary:        Data files for Hindi
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-hi
 Conflicts:      scim-tables < 0.5.7-4
@@ -161,7 +161,7 @@ This package includes table IM data files for Hindi.
 #-------------------------------------------------------------
 %package ja
 Summary:        Data files for Japanese
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ja
 Conflicts:      scim-tables < 0.5.7-4
@@ -183,7 +183,7 @@ This package includes table IM data files for Japanese.
 #-------------------------------------------------------------
 %package kn
 Summary:        Data files for Kannada
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-kn
 Conflicts:      scim-tables < 0.5.7-4
@@ -202,7 +202,7 @@ This package includes table IM data files for Kannada.
 #-------------------------------------------------------------
 %package ko
 Summary:        Data files for Korean
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ko
 Conflicts:      scim-tables < 0.5.7-4
@@ -222,7 +222,7 @@ This package includes table IM data files for Korean.
 #-------------------------------------------------------------
 %package ml
 Summary:        Data files for Malayalam
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ml
 Conflicts:      scim-tables < 0.5.7-4
@@ -239,7 +239,7 @@ This package includes table IM data files for Malayalam.
 #-------------------------------------------------------------
 %package ne
 Summary:        Data files for Nepali
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ne
 Conflicts:      scim-tables < 0.5.7-4
@@ -257,7 +257,7 @@ This package includes table IM data files for Nepali.
 #-------------------------------------------------------------
 %package pa
 Summary:        Data files for Punjabi
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-pa
 Conflicts:      scim-tables < 0.5.7-4
@@ -278,7 +278,7 @@ This package includes table IM data files for Punjabi.
 #-------------------------------------------------------------
 %package ru
 Summary:        Data files for Yawerty
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ru
 Conflicts:      scim-tables < 0.5.7-4
@@ -295,7 +295,7 @@ This package includes table IM data files for Yawerty.
 #-------------------------------------------------------------
 %package ta
 Summary:        Data files for Tamil
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ta
 Conflicts:      scim-tables < 0.5.7-4
@@ -316,7 +316,7 @@ This package includes table IM data files for Tamil.
 #-------------------------------------------------------------
 %package te
 Summary:        Data files for Telugu
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-te
 Conflicts:      scim-tables < 0.5.7-4
@@ -333,7 +333,7 @@ This package includes table IM data files for Telugu.
 #-------------------------------------------------------------
 %package th
 Summary:        Data files for Thai
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-th
 Conflicts:      scim-tables < 0.5.7-4
@@ -350,7 +350,7 @@ This package includes table IM data files for Thai.
 #-------------------------------------------------------------
 %package vi
 Summary:        Data files for Viqr
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-vi
 Conflicts:      scim-tables < 0.5.7-4
@@ -367,7 +367,7 @@ This package includes table IM data files for Viqr.
 #-------------------------------------------------------------
 %package zh
 Summary:        Data files for Chinese
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:	locales-zh
 Conflicts:	scim-tables < 0.5.7-4
@@ -423,7 +423,7 @@ This package includes table IM data files for Chinese.
 #-------------------------------------------------------------
 %package additional
 Summary:        Data files for additional languages
-Group:          System Environment/Libraries
+Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Conflicts:      scim-tables < 0.5.7-4
 
