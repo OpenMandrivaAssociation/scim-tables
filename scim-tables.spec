@@ -10,6 +10,7 @@ License:	GPL
 URL:		http://sourceforge.net/projects/scim/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.bz2
 Patch1:		scim-tables-0.5.0-fix-l10n.patch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	scim >= 1.4.5
 Obsoletes:	%mklibname %name 0
 BuildRequires:	scim-devel >= 1.4.7-4mdk
