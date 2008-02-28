@@ -1,17 +1,17 @@
-%define version	0.5.7
-%define release	%mkrel 6
+%define version	0.5.8
+%define release	%mkrel 1
 
 Name:		scim-tables
 Summary:	Data files for SCIM Generic Table input method module
 Version:	%{version}
 Release:	%{release}
 Group:		System/Internationalization
-License:	GPL
+License:	GPLv2+
 URL:		http://sourceforge.net/projects/scim/
-Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.bz2
+Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.gz
 Patch1:		scim-tables-0.5.0-fix-l10n.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
-Requires:	scim >= 1.4.5
+Requires:	scim-client = %{scim_api}
 Obsoletes:	%mklibname %name 0
 BuildRequires:	scim-devel >= 1.4.7-4mdk
 BuildRequires:	skim-devel >= 1.4.5
