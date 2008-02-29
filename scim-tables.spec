@@ -234,7 +234,9 @@ This package includes table IM data files for Malayalam.
 %files ml
 %defattr(-, root, root)
 %{_datadir}/scim/tables/Malayalam-inscript.bin
+%{_datadir}/scim/tables/Malayalam-phonetic.bin
 %{_datadir}/scim/icons/Malayalam-inscript.png
+%{_datadir}/scim/icons/Malayalam-phonetic.png
 
 #-------------------------------------------------------------
 %package ne
@@ -346,6 +348,22 @@ This package includes table IM data files for Thai.
 %defattr(-, root, root)
 %{_datadir}/scim/tables/Thai.bin
 %{_datadir}/scim/icons/Thai.png
+
+#-------------------------------------------------------------
+%package uk
+Summary:        Data files for Ukrainian
+Group:          System/Internationalization
+Requires:       scim-tables >= %{version}-%{release}
+Requires:       locales-uk
+Provides:       scim-tables-lang = %{version}-%{release}
+
+%description uk
+This package includes table IM data files for Ukrainian.
+
+%files uk
+%defattr(-, root, root)
+%{_datadir}/scim/tables/Ukrainian-Translit.bin
+%{_datadir}/scim/tables/Translit.bin
 
 #-------------------------------------------------------------
 %package vi
