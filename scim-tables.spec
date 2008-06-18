@@ -1,5 +1,5 @@
 %define version	0.5.8
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		scim-tables
 Summary:	Data files for SCIM Generic Table input method module
