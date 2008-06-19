@@ -9,6 +9,7 @@ Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://sourceforge.net/projects/scim/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.gz
+Patch0:		scim-tables-0.5.8-1.gcc.patch
 Patch1:		scim-tables-0.5.0-fix-l10n.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	scim-client = %{scim_api}
@@ -458,6 +459,7 @@ This package includes table IM data files for additional languages.
 #-------------------------------------------------------------
 %prep
 %setup -q
+%patch0 -p1
 %patch1 -p1
 
 %build
