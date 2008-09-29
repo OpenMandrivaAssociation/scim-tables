@@ -1,5 +1,5 @@
 %define version	0.5.8
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Name:		scim-tables
 Summary:	Data files for SCIM Generic Table input method module
@@ -15,7 +15,6 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	scim-client = %{scim_api}
 Obsoletes:	%mklibname %name 0
 BuildRequires:	scim-devel >= 1.4.7-4mdk
-BuildRequires:	skim-devel >= 1.4.5
 Requires:	scim-tables-lang = %{version}-%{release}
 
 %description
@@ -31,26 +30,6 @@ The data files are came from unicon and xcin.
 %_mandir/man1/*
 %{scim_plugins_dir}/IMEngine/*.so
 %{scim_plugins_dir}/SetupUI/*.so
-
-#-------------------------------------------------------------
-%package -n skim-%{name}
-Summary:	Skim setup plugin for scim-tables
-Group:		System/Internationalization
-Requires:	%{name} = %{version}
-Requires:       skim >= 1.4.5
-Obsoletes:	%{name}-skim
-
-%description -n skim-%{name}
-This package contains skim setup plugin for scim-tables.
-
-%files -n skim-%{name} -f skim-scim-tables.lang
-%defattr(-,root,root)
-%doc COPYING
-%{_datadir}/apps/skim/pics/scim-tables.png
-%{_datadir}/config.kcfg/generictable.kcfg
-%{_datadir}/services/skimconfiguredialog/skimplugin_scim_table_config.desktop
-%{_libdir}/kde3/kcm_skimplugin_scim_tables.la
-%{_libdir}/kde3/kcm_skimplugin_scim_tables.so
 
 #-------------------------------------------------------------
 %package en
