@@ -453,7 +453,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -f %{buildroot}%{scim_plugins_dir}/*/*.{a,la}
 
 %find_lang %{name}
-%find_lang skim-scim-tables
 
 %clean
 rm -rf $RPM_BUILD_ROOT
