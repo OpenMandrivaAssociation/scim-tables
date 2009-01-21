@@ -11,6 +11,7 @@ URL:		http://sourceforge.net/projects/scim/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.gz
 Patch0:		scim-tables-0.5.8-1.gcc.patch
 Patch1:		scim-tables-0.5.0-fix-l10n.patch
+Patch2:		scim-tables-0.5.8-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:	scim-client = %{scim_api}
 Obsoletes:	%mklibname %name 0
@@ -440,6 +441,7 @@ This package includes table IM data files for additional languages.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p0
 
 %build
 %configure2_5x --disable-static
