@@ -273,6 +273,8 @@ This package includes table IM data files for Yawerty.
 %defattr(-, root, root)
 %{_datadir}/scim/tables/Yawerty.bin
 %{_datadir}/scim/icons/Yawerty.png
+%{_datadir}/scim/tables/RussianTraditional.bin
+%{_datadir}/scim/icons/RussianTraditional.png
 
 #-------------------------------------------------------------
 %package ta
