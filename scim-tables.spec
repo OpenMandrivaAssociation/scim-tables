@@ -1,5 +1,5 @@
-%define version	0.5.8
-%define release	%mkrel 3
+%define version	0.5.9
+%define release	%mkrel 1
 
 Name:		scim-tables
 Summary:	Data files for SCIM Generic Table input method module
@@ -9,7 +9,6 @@ Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://sourceforge.net/projects/scim/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/scim/%{name}-%{version}.tar.gz
-Patch0:		scim-tables-0.5.8-1.gcc.patch
 Patch1:		scim-tables-0.5.0-fix-l10n.patch
 Patch2:		scim-tables-0.5.8-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
@@ -439,7 +438,6 @@ This package includes table IM data files for additional languages.
 #-------------------------------------------------------------
 %prep
 %setup -q
-%patch0 -p1
 %patch1 -p1
 %patch2 -p0
 
