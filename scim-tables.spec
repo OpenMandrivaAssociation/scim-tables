@@ -134,8 +134,10 @@ This package includes table IM data files for Hindi.
 
 %files hi
 %defattr(-, root, root)
+%{_datadir}/scim/tables/Hindi-remington.bin
 %{_datadir}/scim/tables/Hindi-inscript.bin
 %{_datadir}/scim/tables/Hindi-phonetic.bin
+%{_datadir}/scim/icons/Hindi-remington.png
 %{_datadir}/scim/icons/Hindi-inscript.png
 %{_datadir}/scim/icons/Hindi-phonetic.png
 
