@@ -102,6 +102,21 @@ This package includes table IM data files for Bengali.
 %{_datadir}/scim/icons/Bengali-probhat.png
 
 #-------------------------------------------------------------
+%package el
+Summary:	Data files for Greek
+Group:		System/Internationalization
+Requires:	scim-tables >= %{version}-%{release}
+Requires:	locales-el
+Provides:	scim-tables-lang = %{version}-%{release}
+
+%description el
+This package includes table IM data files for Greek.
+
+%files el
+%defattr(-, root, root)
+%{_datadir}/scim/tables/greekpoly.bin
+
+#-------------------------------------------------------------
 %package gu
 Summary:        Data files for Gujarati
 Group:          System/Internationalization
@@ -119,6 +134,21 @@ This package includes table IM data files for Gujarati.
 %{_datadir}/scim/tables/Gujarati-phonetic.bin
 %{_datadir}/scim/icons/Gujarati-inscript.png
 %{_datadir}/scim/icons/Gujarati-phonetic.png
+
+#-------------------------------------------------------------
+%package he
+Summary:	Data files for Hebrew
+Group:		System/Internationalization
+Requires:	scim-tables >= %{version}-%{release}
+Requires:	locales-he
+Provides:	scim-tables-lang = %{version}-%{release}
+
+%description he
+This package includes table IM data files for Hebrew.
+
+%files he
+%defattr(-, root, root)
+%{_datadir}/scim/tables/classicalhebrew.bin
 
 #-------------------------------------------------------------
 %package hi
@@ -222,6 +252,22 @@ This package includes table IM data files for Malayalam.
 %{_datadir}/scim/icons/Malayalam-phonetic.png
 
 #-------------------------------------------------------------
+%package mr
+Summary:	Data files for Marathi
+Group:		System/Internationalization
+Requires:	scim-tables >= %{version}-%{release}
+Requires:	locales-mr
+Provides:	scim-tables-lang = %{version}-%{release}
+
+%description mr
+This package includes table IM data files for Marathi.
+
+%files mr
+%defattr(-, root, root)
+%{_datadir}/scim/tables/Marathi-remington.bin
+%{_datadir}/scim/icons/Marathi-remington.png
+
+#-------------------------------------------------------------
 %package ne
 Summary:        Data files for Nepali
 Group:          System/Internationalization
@@ -253,9 +299,11 @@ This package includes table IM data files for Punjabi.
 
 %files pa
 %defattr(-, root, root)
+%{_datadir}/scim/tables/Punjabi-remington.bin
 %{_datadir}/scim/tables/Punjabi-inscript.bin
 %{_datadir}/scim/tables/Punjabi-jhelum.bin
 %{_datadir}/scim/tables/Punjabi-phonetic.bin
+%{_datadir}/scim/icons/Punjabi-remington.png
 %{_datadir}/scim/icons/Punjabi-inscript.png
 %{_datadir}/scim/icons/Punjabi-jhelum.png
 %{_datadir}/scim/icons/Punjabi-phonetic.png
@@ -267,6 +315,7 @@ Group:          System/Internationalization
 Requires:       scim-tables >= %{version}-%{release}
 Requires:       locales-ru
 Conflicts:      scim-tables < 0.5.7-4
+Conflicts:	scim-tables-uk < 0.5.10
 Provides:       scim-tables-lang = %{version}-%{release}
 
 %description ru
@@ -274,6 +323,8 @@ This package includes table IM data files for Yawerty.
 
 %files ru
 %defattr(-, root, root)
+%{_datadir}/scim/icons/Translit.png
+%{_datadir}/scim/tables/Translit.bin
 %{_datadir}/scim/tables/Yawerty.bin
 %{_datadir}/scim/icons/Yawerty.png
 %{_datadir}/scim/tables/RussianTraditional.bin
@@ -293,12 +344,14 @@ This package includes table IM data files for Tamil.
 
 %files ta
 %defattr(-, root, root)
+%{_datadir}/scim/tables/Tamil-tamil99.bin
 %{_datadir}/scim/tables/Tamil-inscript.bin
 %{_datadir}/scim/tables/Tamil-phonetic.bin
 %{_datadir}/scim/tables/Tamil-remington.bin
 %{_datadir}/scim/icons/Tamil-inscript.png
 %{_datadir}/scim/icons/Tamil-phonetic.png
 %{_datadir}/scim/icons/Tamil-remington.png
+%{_datadir}/scim/icons/Tamil-tamil99.png
 
 #-------------------------------------------------------------
 %package te
@@ -335,6 +388,23 @@ This package includes table IM data files for Thai.
 %{_datadir}/scim/icons/Thai.png
 
 #-------------------------------------------------------------
+%package ug
+Summary:	Data files for Uyghur
+Group:		System/Internationalization
+Requires:	scim-tables >= %{version}-%{release}
+Requires:	locales-ug
+Provides:	scim-tables-lang = %{version}-%{release}
+
+%description ug
+This package includes table IM data files for Uyghur.
+
+%files ug
+%defattr(-, root, root)
+%{_datadir}/scim/tables/Uyghur-Romanized.bin
+%{_datadir}/scim/tables/Uyghur-Standard.bin
+%{_datadir}/scim/icons/Uyghur.png
+
+#-------------------------------------------------------------
 %package uk
 Summary:        Data files for Ukrainian
 Group:          System/Internationalization
@@ -348,7 +418,7 @@ This package includes table IM data files for Ukrainian.
 %files uk
 %defattr(-, root, root)
 %{_datadir}/scim/tables/Ukrainian-Translit.bin
-%{_datadir}/scim/tables/Translit.bin
+%{_datadir}/scim/icons/Ukrainian-Translit.png
 
 #-------------------------------------------------------------
 %package vi
@@ -408,6 +478,7 @@ This package includes table IM data files for Chinese.
 %{_datadir}/scim/tables/Wu.bin
 %{_datadir}/scim/tables/ZhuYin.bin
 %{_datadir}/scim/tables/ZhuYin-Big.bin
+%{_datadir}/scim/tables/SmartCangJie6.bin
 %{_datadir}/scim/icons/Array30.png
 %{_datadir}/scim/icons/CangJie.png
 %{_datadir}/scim/icons/CangJie3.png
@@ -422,6 +493,7 @@ This package includes table IM data files for Chinese.
 %{_datadir}/scim/icons/Stroke5.png
 %{_datadir}/scim/icons/Wu.png
 %{_datadir}/scim/icons/ZhuYin.png
+%{_datadir}/scim/icons/SmartCangJie6.png
 
 #-------------------------------------------------------------
 %package additional
@@ -437,6 +509,7 @@ This package includes table IM data files for additional languages.
 %defattr(-, root, root)
 %{_datadir}/scim/tables/LaTeX.bin
 %{_datadir}/scim/tables/IPA-X-SAMPA.bin
+%{_datadir}/scim/tables/IPA-Kirshenbaum.bin
 %{_datadir}/scim/icons/LaTeX.png
 %{_datadir}/scim/icons/IPA-X-SAMPA.png
 
@@ -448,6 +521,7 @@ This package includes table IM data files for additional languages.
 %patch3 -p0
 
 %build
+autoreconf -fi
 %configure2_5x --disable-static
 %make
 
