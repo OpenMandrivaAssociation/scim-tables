@@ -1,7 +1,7 @@
 Summary:	Data files for SCIM Generic Table input method module
 Name:		scim-tables
 Version:	0.5.13
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://sourceforge.net/projects/scim/
