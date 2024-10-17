@@ -4,7 +4,7 @@ Version:	0.5.13
 Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://sourceforge.net/projects/scim/
+Url:		https://sourceforge.net/projects/scim/
 Source0:	http://downloads.sourceforge.net/scim/%{name}-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(scim) >= 1.4.9
