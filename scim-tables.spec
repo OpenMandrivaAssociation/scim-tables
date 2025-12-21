@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		System/Internationalization
 Url:		https://sourceforge.net/projects/scim/
 Source0:	http://downloads.sourceforge.net/scim/%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(scim) >= 1.4.9
 BuildRequires:	pkgconfig(scim-gtkutils) >= 1.4.9
